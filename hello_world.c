@@ -6,13 +6,13 @@ MODULE_LICENSE("GPL");
 
 int __init startFun(void)
 {
-	printk(KERN_INFO "Hello world");
+	printk(KERN_INFO "\nHello world\n");
 	return 0;
 }
 
 void __exit endFun(void)
 {
-	printk(KERN_INFO "bye world");
+	printk(KERN_INFO "\nbye world\n");
 }
 
 module_init(startFun);
